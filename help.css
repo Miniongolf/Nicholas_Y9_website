@@ -1,0 +1,223 @@
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Navbar ---------------------------------------------------------------------------------------------- */
+
+#navbar
+{
+    border-bottom: 0.75mm solid #000;
+}
+
+.nav
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #c2c2c2;
+}
+
+.nav li
+{
+    border-collapse: collapse;
+    border-right: 0.75mm solid #000;
+    background-color: #BDFFCC;
+}
+
+.nav li:not(.quiz)
+{
+    float: left;
+}
+
+
+.nav li:last-child
+{
+    border-right: 0.75mm solid #000;
+}
+  
+.nav li a
+{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+  
+.nav li a:hover:not(.active)
+{
+    background-color: #92ffac;
+}
+  
+.nav .active 
+{
+    background-color: #80FF9C;
+}
+
+.quiz
+{
+    float: right;
+    border-left: 0.75mm solid #000;
+}
+
+/* Image Carousel ---------------------------------------------------------------------------------------------- */
+
+.causesSlides {display: none}
+img {vertical-align: middle;}
+
+/* Causes carousel container */
+#causesCarouselContainer
+{
+    background-color: #b3edff;
+    padding:5mm;
+}
+
+/* Generic slideshow container */
+.carouselContainer
+{
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Each image in the carousel */
+.carouselImg
+{
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Next and prev arrow buttons */
+.prev, .next 
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: #4444441a;
+}
+
+/* Move the next arrow to the right side */
+.next
+{
+    right: 0;
+}
+
+.prev:hover, .next:hover
+{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.caption
+{
+    color: #ff9090;
+    font-size: 45px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Slide number indicator */
+.slideNum
+{
+    color: #ffffff;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    align-self: left;
+    top: 0;
+}
+
+/* Radio button selection */
+.dot
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(158, 158, 158);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover
+{
+    background-color: #444444;
+}
+
+/* Fading animation */
+.fade
+{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade
+{
+    from {opacity: .75} 
+    to {opacity: 1}
+}
+
+/* Causes Paragraph ---------------------------------------------------------------------------------------------- */
+
+#causesPara1
+{
+    background-color: #a7ffba;
+    padding: 0.5cm;
+    font-size: 24px;
+}
+
+/* Effects Images ---------------------------------------------------------------------------------------------- */
+
+#effectsImgs
+{
+    background-color: #4B4B4B;
+    display: flex;
+    color: #ffffff;
+    font-size: 45px;
+    text-align: center;
+    display: block;
+    padding: 1cm;
+    margin-top: 0px;
+}
+
+#effectsTable
+{
+    border-width: 0px;
+    padding-top: 1cm;
+    position: relative;
+}
+
+.captionedImg
+{
+    width: 75%;
+}
+
+.captionedImg figcaption
+{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    margin: 0.3cm;
+}
+
+/* Help Paragraph ---------------------------------------------------------------------------------------------- */
+
+#helpPara1
+{
+    background-color: #a7ffba;
+    padding: 0.5cm;
+    font-size: 24px;
+}

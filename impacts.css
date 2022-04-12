@@ -1,0 +1,135 @@
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Navbar ---------------------------------------------------------------------------------------------- */
+
+#navbar
+{
+    border-bottom: 0.75mm solid #000;
+}
+
+.nav
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #c2c2c2;
+    
+}
+
+.nav li
+{
+    border-collapse: collapse;
+    border-right: 0.75mm solid #000;
+    background-color: #BDFFCC;
+}
+
+.nav li:not(.quiz)
+{
+    float: left;
+}
+
+
+.nav li:last-child
+{
+    border-right: 0.75mm solid #000;
+}
+  
+.nav li a
+{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+  
+.nav li a:hover:not(.active)
+{
+    background-color: #92ffac;
+}
+  
+.nav .active 
+{
+    background-color: #80FF9C;
+}
+
+.quiz
+{
+    float: right;
+    border-left: 0.75mm solid #000;
+}
+
+/* Warming Graph */
+
+#warmingGraph
+{
+    background-color: #ffffff;
+}
+
+#Warming_vs_co2
+{
+    fill-opacity: opaque;
+}
+
+/* Effects Paragraph ---------------------------------------------------------------------------------------------- */
+
+#effectsPara1
+{
+    background-color: #bdf3ff;
+    padding: 0.5cm;
+    font-size: 24px;
+}
+
+/* Effects Paragraph ---------------------------------------------------------------------------------------------- */
+
+#effectsPara2
+{
+    background-color: #00E4D7;
+    padding: 0.5cm;
+    font-size: 24px;
+}
+
+/* Effects Images ---------------------------------------------------------------------------------------------- */
+
+#effectsImgs
+{
+    background-color: #4B4B4B;
+    display: flex;
+    color: #ffffff;
+    font-size: 45px;
+    text-align: center;
+    display: block;
+    padding: 1cm;
+    margin-top: 0px;
+}
+
+#effectsTable
+{
+    border-width: 0px;
+    padding-top: 1cm;
+    position: relative;
+}
+
+.captionedImg
+{
+    width: 75%;
+}
+
+.captionedImg figcaption
+{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    margin: 0.3cm;
+}
+
+/* Citations ---------------------------------------------------------------------------------------------- */
+
+#citations
+{
+    background-color: #A9FF81;
+    padding: 0.5cm;
+    font-size: 24px;
+}
