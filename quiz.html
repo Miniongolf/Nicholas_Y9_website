@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" type="text/css" href="quiz.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div id="navbar">
+            <ul class="nav">
+                <li class="nav"><a href="index.html">Home</a></li>
+                <li class="nav"><a href="impacts.html">Impacts</a></li>
+                <li class="nav"><a href="help.html">How You can Help</a></li>
+                <li class="nav quiz"><a class="active" href="quiz.html">Quiz</a></li>
+            </ul>
+        </div>
+        <!-- Quiz -->
+        <div id="quiz">
+
+            <!-- Question 1 -->
+            <div id="q1">
+                <div class="question">
+                    Question 1: <br>
+                    The 3 fossil fuels are oil, natural gas, and <input type="text" id="fillr1">.
+                    <button onclick="checkFill()" id="fillBtn" class="checkBtn">Check answer</button>
+                </div>
+                <div id="fillS"><br></div>
+            </div>
+
+            <br>
+
+            <!-- Question 2 -->
+            <div id="q2">
+                <div class="question">
+                    Question 2: <br>
+                    Which of these is not a renewable energy source?
+                    <br> <input type="radio" id="wind" name="a2" checked="true"> <label for="wind">Wind</label>
+                    <br> <input type="radio" id="solar" name="a2"> <label for="solar">Solar</label>
+                    <br> <input type="radio" id="hydro" name="a2"> <label for="hydro">Hydro</label>
+                    <br> <input type="radio" id="nuclear" name="a2"> <label for="nuclear">Nuclear</label>
+                    <br> <button onclick="checkChoice()" id="choiceBtn" class="checkBtn">Check answer</button>
+                </div>
+                <div id="choiceS"><br></div>
+            </div>
+
+            <br>
+
+            <!-- Question 3 -->
+            <div id="q3">
+                <div class="question">
+                    Question 3: <br>
+                    Which of these gases are greenhouse gases?
+                    <br> <input type="checkbox" id="carbon_dioxide" name="a3"> <label for="carbon_dioxide">Carbon Dioxide</label>
+                    <br> <input type="checkbox" id="methane" name="a3"> <label for="methane">Methane</label>
+                    <br> <input type="checkbox" id="oxygen" name="a3"> <label for="oxygen">Oxygen</label>
+                    <br> <input type="checkbox" id="nitrogen_dioxide" name="a3"> <label for="nitrogen_dioxide">Nitrogen Dioxide</label>
+                    <br> <button onclick="checkBox()" id="boxBtn" class="checkBtn">Check answer</button>
+                </div>
+                <div id="boxS"><br></div>
+            </div>
+
+        </div>
+        <script src="quiz.js"></script>
+    </body>
+</html>

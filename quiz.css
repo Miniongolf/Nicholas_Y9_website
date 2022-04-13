@@ -1,0 +1,99 @@
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Navbar ---------------------------------------------------------------------------------------------- */
+
+#navbar
+{
+    border-bottom: 0.75mm solid #000;
+}
+
+.nav
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #c2c2c2;
+    
+}
+
+.nav li
+{
+    border-collapse: collapse;
+    border-right: 0.75mm solid #000;
+    background-color: #BDFFCC;
+}
+
+.nav li:not(.quiz)
+{
+    float: left;
+}
+
+
+.nav li:last-child
+{
+    border-right: 0.75mm solid #000;
+}
+  
+.nav li a
+{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+  
+.nav li a:hover:not(.active)
+{
+    background-color: #92ffac;
+}
+  
+.nav .active 
+{
+    background-color: #80FF9C;
+}
+
+.quiz
+{
+    float: right;
+    border-left: 0.75mm solid #000;
+}
+
+/* Quiz ---------------------------------------------------------------------------------------------- */
+
+/* Set the background colour and font size of the quiz */
+#quiz
+{
+    background-color: beige;
+    font-size: 24px;
+    padding: 1cm;
+}
+
+/* Initialize the check buttons */
+.checkBtn
+{
+    background-color: #4CAF50;
+    border: 0.5mm solid black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* When the check buttons are disabled change them to a lighter green and a dashed gray border */
+.checkBtn:disabled
+{
+    background-color: #ace2ae;
+    border: 0.5mm dashed rgb(97, 97, 97);
+}
+
+#fillr1
+{
+    font-size: 24px;
+    width: 75px;
+}
