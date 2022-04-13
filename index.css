@@ -228,111 +228,37 @@ body {font-family: Verdana, sans-serif; margin:0}
     font-size: 32px;
 }
 
-/* Image Carousel ---------------------------------------------------------------------------------------------- */
+/* Carbon Footprint Calculator ---------------------------------------------------------------------------------------------- */
 
-.causesSlides {display: none}
-img {vertical-align: middle;}
-
-/* Causes carousel container */
-#causesCarouselContainer
-{
-    background-color: #b3edff;
-    padding:5mm;
-}
-
-/* Generic slideshow container */
-.carouselContainer
-{
-    width: 100%;
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-/* Each image in the carousel */
-.carouselImg
-{
-    width: 100%;
-    max-width: 1000px;
-}
-
-/* Next and prev arrow buttons */
-.prev, .next 
-{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    user-select: none;
-    background-color: #4444441a;
-}
-
-.next
-{
-    right: 0;
-}
-
-.prev:hover, .next:hover
-{
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.caption
-{
-    color: #ff9090;
-    font-size: 45px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Slide number indicator */
-.slideNum
+#footprintCalc
 {
     color: #ffffff;
-    font-size: 14px;
-    padding: 8px 12px;
-    position: absolute;
-    align-self: left;
-    top: 0;
+    background-color: #46b120;
+    font-size: 36px;
+    text-align: center;
+    padding: 4cm;
 }
 
-/* Radio button selection */
-.dot
+#footprintCalc a:visited
 {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: rgb(158, 158, 158);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    color:#ffffff;
 }
 
-.active, .dot:hover
+#footprintCalc a:link
 {
-    background-color: #444444;
+    color:#ffffff;
+    background-color: #4B4B4B;
+    padding: 1cm;
+    border-radius: 0.5cm;
 }
 
-/* Fading animation */
-.fade
-{
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
+/* Websites ---------------------------------------------------------------------------------------------- */
 
-@keyframes fade
+#websites
 {
-    from {opacity: .75} 
-    to {opacity: 1}
+    font-size: 30px;
+    padding: 1cm;
+    padding-bottom: 2cm;
+    background-color:#f3ffd5;
+    padding-left: 15%;
 }
